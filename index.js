@@ -389,6 +389,10 @@ module.exports = function(THREE) {
 		var STATE = { NONE : - 1, ROTATE : 0, DOLLY : 1, PAN : 2, TOUCH_ROTATE : 3, TOUCH_DOLLY : 4, TOUCH_PAN : 5 };
 
 		var state = STATE.NONE;
+		
+		this.getState = function() {
+			return state;
+		}
 
 		// for reset
 
